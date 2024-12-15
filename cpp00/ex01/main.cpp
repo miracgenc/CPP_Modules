@@ -12,6 +12,8 @@ int main()
     {
         std::cout << "EXIT | SEARCH | ADD" << std::endl;
         std::cin >> cmd;
+        if (std::cin.eof())
+            break;
         if (cmd == "EXIT")
             break;
         else if(cmd == "SEARCH")
