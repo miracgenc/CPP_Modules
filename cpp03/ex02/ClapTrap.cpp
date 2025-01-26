@@ -19,6 +19,11 @@ ClapTrap::ClapTrap()
     std::cout << "A ClapTrap instance created with default constructor." << std::endl;
 }
 
+ScavTrap::ScavTrap(ScavTrap& copy): ClapTrap(copy)
+{
+    std::cout << "A ScavTrap instance created with copy constructor." << std::endl;
+}
+
 ClapTrap::ClapTrap(const ClapTrap& copy)
 {
     std::cout << "A ClapTrap instance created with copy constructor." << std::endl;
